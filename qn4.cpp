@@ -5,6 +5,7 @@
 // with values separated by spaces, print the matrix in standard 2D matrix
 // format after transposing it.
 
+// print in transpose
 void print(int rows, int cols, int *matrix) {
   std::cout << "Matrix: " << std::endl;
 
@@ -12,7 +13,7 @@ void print(int rows, int cols, int *matrix) {
   for (int i = 0; i < rows; ++i) {
     std::cout << "[";
     for (int j = 0; j < cols; ++j) {
-      std::cout << matrix[i * cols + j] << ",";
+      std::cout << matrix[j * cols + i] << ",";
     }
     std::cout << "]," << std::endl;
   }
